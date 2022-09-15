@@ -1,5 +1,5 @@
 #include "main.h"
-#include "main.h"
+#include "stdio.h"
 
 /**
  * main - Prints first 50 Fiboncci numbars, starting with 1 and 2
