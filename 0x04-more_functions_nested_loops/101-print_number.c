@@ -2,7 +2,7 @@
 
 /**
  * print_number - Prints an intager.
- * @n: The intager to be printed.
+ * @n:the intager to be printed.
  */
 void print_number(int n)
 {
@@ -10,7 +10,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar('_');
+		_putchar('-');
 		num = -num;
 	}
 
