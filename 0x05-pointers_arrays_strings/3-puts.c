@@ -4,7 +4,7 @@
  * _puts - Prints a string to stdout.
  * @str: The strint to be printed.
  */
-void _putchar(char *str)
+void _puts(char *str)
 {
 	while (*str)
 		_putchar(*str++);
