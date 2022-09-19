@@ -7,7 +7,6 @@
  * Return: The intager value of the converted string.
  */
 
-
 int _atoi(char *s)
 {
 	int i, j, n, m;
