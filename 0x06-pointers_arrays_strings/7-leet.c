@@ -1,27 +1,24 @@
 #include "main.h"
 
 /**
- * leet - Encodes a string to 1337.
- * @str: The string to be encoded.
+ * leet - function that encodes a string into 1337.
+ * @a: Pointer to array
  *
- * Return: A pointer to the encoded.
+ * Return: Array with string encode into 1337.
  */
-char *leet(char *str)
+char *leet(char *a)
 {
-	int indx1 = 0; indx2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i, j;
+	char encode[10] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	char ch[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
 
-	while (str[indx1])
+	for (i = 0 ; a[i] != '\0' ; i++)
 	{
-		for (indx2 = 0; indx2 <= 7; indx2++)
+		for (j = 0 ; j <= 10 ; j++)
 		{
-			if (str[indx1] == leet[indx2] ||
-			    str[indx1] - 32 == leet[indx2])
-				str[indx1] = indx2 + '0';
+			if (a[i] == ch[j])
+				a[i] = encode[j];
 		}
-
-		indx1++;
 	}
-
-	return (str);
+	return (a);
 }
